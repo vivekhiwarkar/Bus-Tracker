@@ -408,8 +408,10 @@
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>We love our fans!</em></p>
+  <h3 class="text-center">Contact Us</h3>
+  <p class="text-center"><em>Need some help!
+      feel free to contact us
+                         </em></p>
 
   <div class="row">
     <div class="col-md-4">
