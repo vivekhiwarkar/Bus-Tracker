@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme The Band</title>
+  <title >Bus Tracker - Find your Bus Instantly Anytime Anywhere</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,11 +17,12 @@
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="icon" href="Logo_thumb28(black).png" type="image/x-icon"/>
   <style>
-  body {
-      font: 400 15px/1.8 Lato, sans-serif;
-      color: #777;
-  }
+      body {
+          font: 400 15px/1.8 Lato, sans-serif;
+          color: #777;
+      }
   h3, h4 {
       margin: 10px 0 30px 0;
       letter-spacing: 1px;
@@ -141,6 +142,7 @@
       margin-left:20px;
   }
   .navbar {
+      padding-left:10px;
       font-family: 'Pacifico',sans-serif;
       margin-bottom: 0;
       background-color: #2d2d30;
@@ -148,6 +150,9 @@
       font-size: 17px !important;
       letter-spacing: 4px;
       opacity: 0.9;
+  }
+  .navbar_font_size{
+      font-size:20px;
   }
   .navbar li a, .navbar .navbar-brand {
       color: #d5d5d5 !important;
@@ -165,6 +170,12 @@
   .open .dropdown-toggle {
       color: #fff;
       background-color: #555 !important;
+  }
+  .logo{
+      margin-right:10px;
+      padding:10px;
+      margin-bottom: 0;
+      opacity:0.9;
   }
   .dropdown-menu li a {
       color: #000 !important;
@@ -202,7 +213,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage">Bus Tracker</a>
+        <a class="navbar-brand logo" href="#myPage"><img src="Logomakr_5lNvlC.png" height="35px" width="35px"/></a>
+      <a class="navbar-brand navbar_font_size" href="#myPage">Bus Tracker</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
