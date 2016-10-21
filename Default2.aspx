@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title >Bus Tracker - Find your Bus Instantly Anytime Anywhere</title>
+  <title >Bus Tracker | Find your Bus Instantly Anytime Anywhere</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -50,6 +50,10 @@
   }
   .person:hover {
       border-color: #f1f1f1;
+  }
+  .greyscale{
+      filter:greyscale(90%);
+      margin: auto;
   }
   .carousel-inner img {
       -webkit-filter: grayscale(90%);
@@ -196,7 +200,9 @@
       text-decoration: none;
   }
   .form-control {
-      border-radius: 0;
+     
+      width:70%;
+      border-radius: 5px;
   }
   textarea {
       resize: none;
@@ -220,17 +226,8 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">Home</a></li>
         <li><a href="#band">Track</a></li>
-        <li><a href="#tour">Tour</a></li>
+        <li><a href="#tour">About Us</a></li>
         <li><a href="#contact">Contact Us</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">More
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Merchandise</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li>
-          </ul>
-        </li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
@@ -248,26 +245,23 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="bus.jpg" alt="New York" width="1200" height="700">
+        <img src="bus.jpg" alt="Pimpri" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>The atmosphere in New York is lorem ipsum.</p>
+          <h3>Pune</h3>
         </div>
       </div>
 
       <div class="item">
-        <img src="bus.jpg" alt="Chicago" width="1200" height="700">
+        <img src="pmpml2.JPG" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago - A night we won't forget.</p>
+          <h3>Pimpri</h3>
         </div>
       </div>
     
       <div class="item">
-        <img src="bus.jpg" alt="Los Angeles" width="1200" height="700">
+        <img src="pmpml3.jpg" alt="Los Angeles" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>LA</h3>
-          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+          <h3>Nigdi</h3>
         </div>
       </div>
     </div>
@@ -294,6 +288,11 @@
     <div class="card color right">
         <br>
         <h2>Check Your Bus On the Go with Bus Tracker</h2>
+        <br>
+        <div class="form-group">
+  <p>Name:</p>
+  <input type="text" class="form-control" id="usr">
+</div>
     </div>
             </div>
         <div class="col-sm-4">
@@ -305,81 +304,13 @@
     </div>
             </div>
         </div>
-    
-  <div class="row">
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Name</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo" class="collapse">
-        <p>Guitarist and Lead Vocalist</p>
-        <p>Loves long walks on the beach</p>
-        <p>Member since 1988</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Name</strong></p><br>
-      <a href="#demo2" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo2" class="collapse">
-        <p>Drummer</p>
-        <p>Loves drummin'</p>
-        <p>Member since 1988</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Name</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-  </div>
 </div>
 
-<!-- Container (TOUR Section) -->
+<!-- Container (About section) -->
 <div id="tour" class="bg-1">
   <div class="container">
-    <h3 class="text-center">TOUR DATES</h3>
-    <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
-    <ul class="list-group">
-      <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
-      <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li>
-      <li class="list-group-item">November <span class="badge">3</span></li>
-    </ul>
-    
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="paris.jpg" alt="Paris" width="400" height="300">
-          <p><strong>Paris</strong></p>
-          <p>Friday 27 November 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="newyork.jpg" alt="New York" width="400" height="300">
-          <p><strong>New York</strong></p>
-          <p>Saturday 28 November 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-          <p><strong>San Francisco</strong></p>
-          <p>Sunday 29 November 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-        </div>
-      </div>
-    </div>
+    <h3 class="text-center">Bus Tracker - Track your Bus anytime anywhere</h3>
+    <p class="text-center">Bus Tracker lets you to track the PMPL & BRTS<br>We need just the bus no!!!</p>
   </div>
   
   <!-- Modal -->
@@ -421,14 +352,16 @@
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>We love our fans!</em></p>
+  <p class="text-center"><em>Need Help ?</em></p>
 
   <div class="row">
     <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+      <p>Any Suggestions...</p>
+        <p>We will Like to here from You...</p>
+        <p>Drop a note..</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Akurdi,Pune</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 9145738378</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: bus_tracker@gmail.com</p>
     </div>
     <div class="col-md-8">
       <div class="row">
@@ -451,23 +384,25 @@
   <br>
   <h3 class="text-center">From The Blog</h3>
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
-    <li><a data-toggle="tab" href="#menu1">Chandler</a></li>
-    <li><a data-toggle="tab" href="#menu2">Peter</a></li>
+    <li class="active"><a data-toggle="tab" href="#home">Shreerag</a></li>
+    <li><a data-toggle="tab" href="#menu1">Vivek</a></li>
+    <li><a data-toggle="tab" href="#menu2">Akshar</a></li>
+      <li><a data-toggle="tab" href="#menu2">Swanand</a></li>
+      <li><a data-toggle="tab" href="#menu2">Aditya</a></li>
   </ul>
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
       <h2>Mike Ross, Manager</h2>
-      <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
+      <p>Will come Soon !!</p>
     </div>
     <div id="menu1" class="tab-pane fade">
       <h2>Chandler Bing, Guitarist</h2>
-      <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+      <p>Will come Soon !!</p>
     </div>
     <div id="menu2" class="tab-pane fade">
       <h2>Peter Griffin, Bass player</h2>
-      <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+      <p>Will come Soon !!</p>
     </div>
   </div>
 </div>
@@ -475,9 +410,9 @@
 <div id="googleMap"></div>
 
 <!-- Add Google Maps -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
-    var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+    var myCenter = new google.maps.LatLng(18.4638871, 73.8657832);
 
     function initialize() {
         var mapProp = {
@@ -505,7 +440,9 @@
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+  <p>Bus Tracker | Live Bus Tracking</p>
+<br>
+    <p></p>
 </footer>
 
 <script>
